@@ -121,10 +121,20 @@ font-size: 20px;
   }
 
   /* responsive------------------- */
-  @media (max-width: 1450px){
+  @media (max-width: 1600px){
     .heading {
         max-width: 26%;
     }
+    .single-doctor {
+      
+      width: 1290px;
+  }
+  .headings {
+    
+    width: 1290px;
+
+  
+}
   }
   @media (max-width: 1200px){
     .heading {
