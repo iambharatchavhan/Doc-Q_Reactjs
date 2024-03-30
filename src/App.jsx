@@ -1,10 +1,9 @@
-import FindADoctor from "./components/find_a_doctor/FindADoctor";
-import Navbar from "./components/navbar/Navbar";
+import FindADoctor from "./components/Find_a_doctors_page/navbar/Find_a_docter_page";
 
 function App() {
   return (
     <div>
-    <Navbar />
+    <FindADoctor/>
     </div>
   );
 } 

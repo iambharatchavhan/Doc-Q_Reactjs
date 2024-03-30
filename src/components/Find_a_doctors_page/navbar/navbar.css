@@ -113,4 +113,8 @@ header{
     #search{
         line-height: 2.725rem;
     }
+    #header{
+        
+        padding: 5px 72px;
+    }
   }

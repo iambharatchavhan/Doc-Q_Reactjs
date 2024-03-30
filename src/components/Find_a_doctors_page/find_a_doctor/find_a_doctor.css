@@ -18,7 +18,7 @@
     color: #00305F;
     border-radius: 15px;
     padding: 10px 25px;
-    width: 1247px;
+    width: 1700px;
     max-height: 90px;
   }
   .mre-5{
@@ -89,7 +89,7 @@ font-size: 20px;
   .headings{
     display: flex;
     justify-content: space-between;
-    width: 1247px;
+    width: 1700px;
     margin-right: 16%;
     font-weight: bold;
     font-size: 25px;
