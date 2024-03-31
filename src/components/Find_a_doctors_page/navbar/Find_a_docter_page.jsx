@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className={`hidden text-2xl border border-zinc-600 p-2 max-[991px]:block max-[991px]:text-lg`} onClick={handleMenu}>{menuOpen ? <IoIosClose /> : <RxHamburgerMenu />}</div>
         </div>
       </header>
-      <FindADoctor searchTerm={searchTerm} />
+      {/* <FindADoctor searchTerm={searchTerm} /> */}
     </>
   );
 }
