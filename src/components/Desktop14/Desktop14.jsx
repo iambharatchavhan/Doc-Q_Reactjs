@@ -1,5 +1,5 @@
 import React from "react";
-import "./Desktop14.css";
+// import "./Desktop14.css";
 import Frame49 from "./Frame49";
 import Topbar from "./Topbar";
 import Sidenavbar from "./Sidenavbar";
@@ -11,12 +11,14 @@ function DeskTop14() {
   return (
     <div className="parent">
       <Topbar />
-      <div className="part1">
+      <div className="flex">
         <Sidenavbar />
-        <div className="summary">
+        <div className="w-full border bg-[#FAFAFA]">
           <Frame49 />
-          <Threetabs />
-          <div className="schedule">
+          <div className="max-w-full h-auto  m-2">
+            <Threetabs />
+          </div>
+          <div className=" m-auto border xl:flex justify-around ">
             <Frame62 />
             <Frame53 />
           </div>
