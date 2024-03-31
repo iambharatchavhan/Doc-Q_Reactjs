@@ -1,16 +1,18 @@
-nav ul li a:hover {
+#doctors-nav #doctors-ul li a:hover {
     color: gray;
 }
-header{
+#doctors-header{
     background-color: white;
     margin-top: 25px;
 }
 .clr-blue{
     color: #5284B5;
 }
-
+#doctors-search{
+    border: 0.85px 0px 0px 0px;
+}
 @media screen and (max-width:991px) {
-    header nav {
+    #doctors-header #doctors-nav {
         position: absolute;
         top: 105%;
         right: 2rem;
@@ -24,17 +26,17 @@ header{
         transition: none;
     }
 
-    header nav.active {
+    #doctors-header #doctors-nav.active {
         transform: scale(1);
         opacity: 1;
         transition: .2s ease-out;
     }
 
-    header nav li a {
+    #doctors-header #doctors-nav li a {
         display: block;
     }
 
-    header nav ul {
+    #doctors-header #doctors-nav #doctors-ul {
         padding: 0.5rem;
     }
   
@@ -42,78 +44,78 @@ header{
 
 
 @media screen and (max-width:640px) {
-    .logo{
+    .doctors-logo{
         margin-right: 12px;
     }
-    .search input{
+    .doctors-search input{
         width: 200px;
         font-size: 0.75rem;
     }
-    #search{
+    #doctors-search{
         line-height: 1.725rem;
     }
 }
 
 @media screen and (max-width:375px) {
-    .logo{
+    .doctors-logo{
         margin-right: 15px;
     }
-    #search{
+    #doctors-search{
         line-height: 1.725rem;
     }
-    .search input{
+    .doctors-search input{
         width: 150px;
         font-size: 1rem;
     }
 }
 @media screen and (max-width:1500px) and (min-width: 1300px) {
-    #header{
+    #doctors-header{
         padding: 20px 90px;
     }
-    ul li{
+    #doctors-ul li{
         font-size: 24px;
     }
-    #search{
+    #doctors-search{
         line-height: 2.725rem;
     }
   }
   @media only screen and (min-width: 1250px) and (max-width: 1366px) {
     /* Styles for laptops */
-    #header{
+    #doctors-header{
         padding: 20px 90px;
     }
-    ul li{
+    #doctors-ul li{
         font-size: 22px;
     }
-    #search{
+    #doctors-search{
         line-height: 2.725rem;
     }
   }
   @media only screen and (min-width: 1024px) and (max-width: 1240px) {
     /* Styles for laptops */
-    #header{
+    #doctors-header{
         
         padding-left: 72px;
     }
-    ul li{
+    #doctors-ul li{
         font-size: 22px;
     }
-    #search{
+    #doctors-search{
         width: 15rem;
     }
-    #search{
+    #doctors-search{
         line-height: 2.725rem;
     }
   }
   @media only screen and (min-width: 1501px) {
     /* Styles for screens wider than 1500px */
-    ul li {
+    #doctors-ul li {
       font-size: 26px;
     }
-    #search{
+    #doctors-search{
         line-height: 2.725rem;
     }
-    #header{
+    #doctors-header{
         
         padding: 5px 72px;
     }
