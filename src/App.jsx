@@ -1,15 +1,17 @@
-import FindADoctor from "./components/Find_a_doctors_page/data/FindADoctor";
-import Desktop14 from "./components/Desktop14/Desktop14";
-import Doctorprofile from "./components/Doctorprofile/Doctorprofile";
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
-
   return (
-    <div>
-      <FindADoctor />
-     <Desktop14/>
-     <Doctorprofile/>
-    </div>
+    <>
+      <Header />
+      <div className="flex justify-end">
+        <Sidebar />
+        <Outlet />
+      </div>
+    </>
   );
 }
+
 export default App;
