@@ -130,11 +130,12 @@
     font-family: "Source Sans 3", sans-serif;
   }
   .doctor-heading {
-    max-width: 60%;
+    max-width: 79%;
   }
 }
-@media (max-width: 500px){
+@media (min-width: 401px) and (max-width: 500px) {
   .doctor-heading {
-    max-width: 79%;
+    max-width: 57%;
+
   }
 }

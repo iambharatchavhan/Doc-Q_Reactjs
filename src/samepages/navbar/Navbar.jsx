@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosClose } from "react-icons/io";
 import './navbar.css';
-import FindADoctor from '../data/doctor_data';
+// import FindADoctor from '../data/doctor_data';
 
-const Navbar = () => {
+const Navbar = ({ setSearchTerm }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
+
   const handleMenu = () => {
     document.querySelector('nav').classList.add('active')
     if (menuOpen) {
@@ -14,6 +14,7 @@ const Navbar = () => {
     }
     setMenuOpen(!menuOpen);
   }
+
   return (
     <>
       <header id='doctors-header' className='w-full flex items-center justify-between px-6 py-2 relative text-[#BBBBBB]'>
@@ -29,11 +30,10 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="doctors-search flex gap-4">
-          <input id='doctors-search' value={searchTerm} onChange={(e)=>{setSearchTerm(e.target.value)}} type="text" className='px-4 py-1 w-96 text-lg outline-none border border-gray-700 rounded-full' placeholder='Search..'/>
+          <input id='doctors-search' onChange={(e) => setSearchTerm(e.target.value)} type="text" className='px-4 py-1 w-96 text-lg outline-none border border-gray-700 rounded-full' placeholder='Search..'/>
           <div className={`hidden text-2xl border border-zinc-600 p-2 max-[991px]:block max-[991px]:text-lg`} onClick={handleMenu}>{menuOpen ? <IoIosClose /> : <RxHamburgerMenu />}</div>
         </div>
       </header>
-      <FindADoctor searchTerm={searchTerm} />
     </>
   );
 }

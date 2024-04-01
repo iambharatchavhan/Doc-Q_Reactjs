@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Find_a_doctors_page/find_a_doctors_page/Find_a_docter_page";
+import Navbar from '../../samepages/navbar/Navbar';
 import "./doctorprofile.css";
 
 const Doctorprofile = () => {
