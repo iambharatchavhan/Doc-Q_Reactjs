@@ -50,7 +50,7 @@ const settingItems = [
 
 const Setting = () => {
   return (
-    <div className="w-full mt-[8vh] md:mt-[5vh] lg:mt-[12vh] bg-[#f9f8f8] min-h-[95vh] max-w-[80%] md:max-w-[90%] lg:max-w-[85%] p-2 lg:p-5">
+    <div className="w-full mt-[8vh] md:mt-[5vh] lg:mt-[12vh] bg-[#f9f8f8] h-full lg:h-[88vh] max-w-[80%] md:max-w-[90%] lg:max-w-[85%] p-2 lg:p-5 lg:overflow-hidden">
       <h2 className="font-semibold mb-5">Settings</h2>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8">
         <div>
@@ -63,25 +63,27 @@ const Setting = () => {
               <CiCircleQuestion size={25} />
             </Link>
           </div>
-          {settingItems &&
-            settingItems.map((item) => (
-              <Link
-                to={item.link}
-                key={item.name}
-                className="flex items-center justify-between bg-white my-2 px-5 py-2 rounded-md"
-              >
-                <div className="flex items-center gap-4">
-                  <p className="text-[#838383]">{item.icon}</p>
-                  <div>
-                    <h3 className="font-medium">{item.name}</h3>
-                    <p className="text-xs lg:text-sm text-[#838383]">
-                      {item.desc}
-                    </p>
+          <div className="lg:overflow-y-scroll lg:h-[60vh]">
+            {settingItems &&
+              settingItems.map((item) => (
+                <Link
+                  to={item.link}
+                  key={item.name}
+                  className="flex items-center justify-between bg-white my-2 px-5 py-2 rounded-md"
+                >
+                  <div className="flex items-center gap-4">
+                    <p className="text-[#838383]">{item.icon}</p>
+                    <div>
+                      <h3 className="font-medium">{item.name}</h3>
+                      <p className="text-xs lg:text-sm text-[#838383]">
+                        {item.desc}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <IoIosArrowForward size={25} className="text-[#838383]" />
-              </Link>
-            ))}
+                  <IoIosArrowForward size={25} className="text-[#838383]" />
+                </Link>
+              ))}
+          </div>
         </div>
         <div>
           <div className="flex items-center justify-between px-5 py-2 bg-white rounded-md mb-5">
