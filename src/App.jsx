@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Footer from "./components/Footer";
 // import Navbar from "./components/navbar/Navbar";
 import Testimonials from "./components/Testimonials/Testimonials";
@@ -26,4 +27,24 @@ function App() {
 
   );
 }
+=======
+// import { Outlet } from "react-router-dom";
+// import Header from "./components/Header/Header";
+// import Sidebar from "./components/Sidebar/Sidebar";
+import DoctorProfile from "./components/Doctorprofile/Doctorprofile";
+
+function App() {
+  return (
+    <>
+      {/* <Header /> */}
+      {/* <div className="flex justify-end"> */}
+        {/* <Sidebar />
+        <Outlet /> */}
+        <DoctorProfile/>
+      {/* </div> */}
+    </>
+  );
+}
+
+>>>>>>> 036f741af4a678c2db5c2a41b44f6d6552dfee68
 export default App;
