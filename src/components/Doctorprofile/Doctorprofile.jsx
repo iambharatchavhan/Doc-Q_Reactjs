@@ -14,7 +14,7 @@ const DoctorProfile = () => {
   ];
 
   return (
-    <div className=" flex min-h-screen justify-center items-center bg-[#F7FAFF] overflow-hidden">
+    <div className=" flex justify-center items-center bg-[#F7FAFF] overflow-hidden">
       <div className="flex justify-center items-center w-11/12 flex-wrap gap-8 lg:flex-nowrap">
       
       {/* parent container */}
@@ -79,7 +79,7 @@ const DoctorProfile = () => {
 
         {/* end of doctors container */}
         {/* right side time stapms cotainer  */}
-        <div className="  flex justify-center items-center lg:min-h-screen lg:w-1/2 lg:border-l-2 lg:border-gray-400 ">
+        <div className="  flex justify-center items-center lg:min-h-[90svh] lg:w-1/2 lg:border-l-2 lg:border-gray-400 ">
 
 
           <div className="w-[400px] min-h-[500px] rounded-lg flex flex-col items-center gap-4  shadow-[0px_0px_5px_1px_#00000024] relative z-[20] md:w-[80%] mb-5 lg:w-[450px] ">
