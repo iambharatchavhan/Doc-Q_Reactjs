@@ -10,7 +10,7 @@ function App() {
       {/* <div className="flex justify-end"> */}
         {/* <Sidebar />
         <Outlet /> */}
-        <DoctorProfile/>
+        {/* <DoctorProfile/> */}
       {/* </div> */}
     </>
   );
