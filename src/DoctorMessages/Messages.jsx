@@ -74,7 +74,7 @@ const Messages = () => {
               </div>
             </div>
             <div className="col-span-2 bg-white-500">
-              <div className="h-[60%] bg-red-500 flex justify-center items-center rounded-[4.27px] relative" style={{ overflow: 'hidden' }}>
+              <div className="h-[60%] bg-white-500 flex justify-center items-center rounded-[4.27px] relative" style={{ overflow: 'hidden' }}>
                 <img
                   src={userpic}
                   alt="Userpic"
