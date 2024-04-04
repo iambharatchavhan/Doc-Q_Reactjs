@@ -1,3 +1,4 @@
+import "./Messages.scss";
 import backArrow from "./icons/backarrow.svg";
 import ellipses from "./icons/ellipses.svg";
 import callerpic from "./images/callerpic.svg";
@@ -26,9 +27,9 @@ const Messages = () => {
           <div className="mb-5">
             Messages &gt; <span>{info.name}</span>
           </div>
-          <div className="messages grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="md:col-span-1">
-              <div className="bg-white-500 mb-1 rounded-[4.27px] grid grid-cols-2">
+          <div className="messages grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-4">
+            <div className="lg:col-span-1">
+              <div className="bg-[#FFFFFF] mb-1 rounded-[4.27px] grid grid-cols-2">
                 <div className="flex flex-row ">
                   <div className="ml-5 mr-2 flex items-center justify-center">
                     {/* <img src={backArrow} alt="Back Arrow" /> */}
@@ -49,7 +50,7 @@ const Messages = () => {
                   <img src={ellipses} alt="ellipses" />
                 </div>
               </div>
-              <div className="bg-white-500 h-[auto] rounded-[4.27px] pt-10">
+              <div className="px-5 pb-5 bg-[#FFFFFF] h-[auto] rounded-[4.27px] pt-10">
                 <MessageSent
                   message={"Hello, how are you doing?"}
                   time={"09:27am"}
@@ -67,14 +68,16 @@ const Messages = () => {
                   status={"Seen"}
                 />
                 <MessageSent message={"That would be great"} time={"09:28am"} />
-
                 <div className="mt-28">
                   <MessageInput onSubmit={() => console.log("done")} />
                 </div>
               </div>
             </div>
-            <div className="md:col-span-2 bg-white-500">
-              <div className="h-[60%] bg-white-500 flex justify-center items-center rounded-[4.27px] relative" style={{ overflow: 'hidden' }}>
+            <div className="lg:col-span-2 md:col-span-1">
+              <div
+                className="h-[60%] bg-[#FFFFFF] flex justify-center items-center rounded-[4.27px] relative"
+                style={{ overflow: "hidden" }}
+              >
                 <img
                   src={userpic}
                   alt="Userpic"
@@ -91,15 +94,15 @@ const Messages = () => {
                   alt="callerpic"
                   style={{
                     position: "absolute",
-                    left: "70%", 
-                    bottom: "10%", 
-                    transform: "translate(-50%, 0)", 
+                    left: "70%",
+                    bottom: "10%",
+                    transform: "translate(-50%, 0)",
                     width: "30%",
                     height: "auto",
                   }}
                 />
               </div>
-              <div className="callbutton bg-white-500 mt-10 flex justify-center items-center gap-20 rounded-[4.27px]">
+              <div className="callbutton bg-[#FFFFFF] mt-10 py-5 flex justify-center items-center gap-20 rounded-[4.27px]">
                 <CallButtons />
               </div>
             </div>
