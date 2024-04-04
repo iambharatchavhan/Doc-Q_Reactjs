@@ -26,8 +26,8 @@ const Messages = () => {
           <div className="mb-5">
             Messages &gt; <span>{info.name}</span>
           </div>
-          <div className="grid grid-cols-3 gap-4">
-            <div className="">
+          <div className="messages grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="md:col-span-1">
               <div className="bg-white-500 mb-1 rounded-[4.27px] grid grid-cols-2">
                 <div className="flex flex-row ">
                   <div className="ml-5 mr-2 flex items-center justify-center">
@@ -73,7 +73,7 @@ const Messages = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-2 bg-white-500">
+            <div className="md:col-span-2 bg-white-500">
               <div className="h-[60%] bg-white-500 flex justify-center items-center rounded-[4.27px] relative" style={{ overflow: 'hidden' }}>
                 <img
                   src={userpic}
@@ -99,7 +99,7 @@ const Messages = () => {
                   }}
                 />
               </div>
-              <div className="bg-white-500 mt-10 flex justify-center items-center gap-20 rounded-[4.27px]">
+              <div className="callbutton bg-white-500 mt-10 flex justify-center items-center gap-20 rounded-[4.27px]">
                 <CallButtons />
               </div>
             </div>
