@@ -16,7 +16,7 @@ export default function Footer() {
             <p className="ml-10 text-gray-500 mt-6 sm:ml-0">Nam posuere accumsan porta. Integer <br />id tincidunt sit amet sed libero.</p>
           </div>
           <div className="foo_section flex flex-col items-center mt-28 sm:flex-row sm:justify-center sm:mt-[90px] sm:space-x-7 sm:ml-14">
-  <ul className="mb-4 sm:mb-0">
+  <ul className="mb-4 sm:mb-0 mr-7">
     <li className="first mb-2">COMPANY</li>
     <li className="text-gray-500">Donec dignissim</li>
     <li className="text-gray-500">Curabitur egestas</li>
