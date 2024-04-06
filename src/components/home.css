@@ -305,22 +305,47 @@ color: gray;
         height: auto;
         padding-right: 150px;
         
-    }
-    .bdiv{
-       width: 150px;
-       margin-bottom: 10px; 
-       margin: 0% 20%;
-       padding-right: 20px;
-    }
-    .bottomDiv1{
-        display: flex;
-        flex-direction: column;
-    }
-    .bottomDiv2{
-        display: flex;
-        flex-direction: column;
+    }   
 
-    }
+    .bdiv{
+        width: 270px;
+        padding: 30px;
+        margin-bottom: 10px; 
+        margin: 0% 14%;
+        position: relative;
+        top: 10px;
+        
+        margin-top: 30px;
+     }
+    
+     .bottomDiv1{
+         display: flex;
+         flex-direction: column;
+         margin-top: 50px;
+         position: relative;
+         
+     }
+     .bottomDiv img{
+         width:60px;
+         height: 60px;
+     }
+     .bottomDiv span{
+          padding-top: 40px;
+          padding-left: 10px;
+          
+     }
+     .bottomDiv2{
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 50px;
+ 
+     }
+     #myPara{
+         align-items: center;
+         padding-left: 40px;
+         position: relative;
+         top:30px
+     }
     
 }
 
@@ -379,7 +404,7 @@ color: gray;
         color: gray;
         position: absolute;
         margin: 30px 0px;
-        margin-bottom: 70px;
+        margin-bottom: 70px; 
     }
     .Jambotron{
         margin-top: 40%;
@@ -410,23 +435,42 @@ color: gray;
         height: auto;
     }
     .bdiv{
-       width: 200px;
+       width: 270px;
+       padding: 30px;
        margin-bottom: 10px; 
-       margin: 0% 20%;
+       margin: 0% 14%;
+       position: relative;
+       top: 10px;
+       margin-top: 30px;
     }
+   
     .bottomDiv1{
         display: flex;
         flex-direction: column;
+        margin-top: 50px;
+    }
+    .bottomDiv img{
+        width:60px;
+        height: 60px;
+    }
+    .bottomDiv span{
+         padding-top: 40px;
+         padding-left: 10px;
+         
     }
     .bottomDiv2{
         display: flex;
         flex-direction: column;
+        margin-bottom: 50px;
 
     }
     #myPara{
         align-items: center;
         padding-left: 40px;
+        position: relative;
+        top:30px
     }
+    
     
 }
 
@@ -488,6 +532,10 @@ color: gray;
         top: 200px;
 
     }
+    #myPara{
+        padding: 30px 0px;
+        font-size: 2rem;
+    }
     .specialListSection{
         /* margin-bottom: 500px; */
        position: relative;
@@ -512,9 +560,13 @@ color: gray;
     }
     .bdiv{
         width: 200px;
+        padding: 20px;
     }
     #smallimg{
         padding-left: 10px;
+    }
+    .bottomDiv div{
+        padding-bottom: 50px;
     }
 
       
