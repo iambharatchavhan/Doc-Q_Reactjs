@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../../assets/images/doctor_imgs/logo.png";
+import logo from "../../assets/Logo.jpg";
 import { IoIosSearch } from "react-icons/io";
 import { IoMailOutline } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";
@@ -35,7 +35,7 @@ function Header() {
         <img
           src={logo}
           alt="logo"
-          className="w-28 lg:h-12 lg:w-28 cursor-pointer"
+          className="w-28 lg:h-14  lg:w-28 cursor-pointer "
         />
       </Link>
       <div className="w-full lg:w-1/3 border rounded-md">
