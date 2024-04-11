@@ -2,7 +2,7 @@ import './footer.css';
 
 export default function Footer() {
   return (
-    <div>
+    <div className=''>
      <div className="flex flex-col justify-center items-center gap-7 sm:flex-row sm:gap-36 sm:mt-24">
   <img src="src/assets/image 30.png" alt="" className="w-44 h-12 sm:mr-4 sm:mt-8" />
   <img src="src/assets/image 27.png" alt="" className="w-44 h-12 sm:mr-4 sm:mt-8" />

@@ -14,13 +14,13 @@ const DoctorProfile = () => {
   ];
 
   return (
-    <div className=" flex justify-center items-center bg-[#F7FAFF] overflow-hidden">
-      <div className="flex justify-center items-center w-11/12 flex-wrap gap-8 lg:flex-nowrap">
+    <div className=" flex justify-center items-center bg-[#F7FAFF] md:min-h-[100svh] overflow-hidden">
+      <div className="flex justify-center items-center w-11/12 flex-wrap gap-8 lg:flex-nowrap lg:mt-[-4rem]">
       
       {/* parent container */}
 
 
-        <div className="relative flex flex-col items-start justify-center gap-14 md:mt-10 lg:mt-1">
+        <div className="relative flex flex-col items-start justify-center gap-5 md:mt-10 lg:mt-1">
           {/* doctors container  */}
           <div className=" w-[80rem] h-[80rem] bg-[#8abbf66c] rounded-full absolute right-[5rem]  z-[10]   md:right-[25rem] md:top-[-5rem]  lg:right-[47rem] lg:top-[-7rem]"></div>
           <div className="flex justify-center items-center gap-32 relative z-[20] flex-wrap md:flex-nowrap">
@@ -84,7 +84,7 @@ const DoctorProfile = () => {
 
           <div className="w-[400px] min-h-[500px] rounded-lg flex flex-col items-center gap-4  shadow-[0px_0px_5px_1px_#00000024] relative z-[20] md:w-[80%] mb-5 lg:w-[450px] ">
             <div>
-              <h3 className="text-xl font-medium p-2 ">Pick a time slot</h3>
+              <h3 className="text-2xl font-medium p-2 ">Pick a time slot</h3>
             </div>
             <div className="flex justify-between gap-10 py-2 px-4 rounded-xl bg-gradient-to-r from-[#5284B5] to-[#8ABBF6] text-[#fefefe]">
               <div className="text-md">Clinic Appointment</div>

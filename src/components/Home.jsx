@@ -14,8 +14,6 @@ import Vector from '../assets/Vector.png';
 import pediatric_surgery from '../assets/pediatric_surgery.png';
 import opthalmology from '../assets/opthalmology.png';
 import orthopaedics from '../assets/orthopaedics.png';
- 
- 
 import output1 from '../assets/output1.png';
 import image22 from '../assets/image 22.png';
 import Group8 from '../assets/Group 8.png';
@@ -23,7 +21,6 @@ import Arc from '../assets/Arc.png';
 import output2 from '../assets/output2.png';
 import TopSpecialist from './TopSpecialist/TopSpecialist';
 import Testimonials from './Testimonials/Testimonials';
-import Footer from './Footer';
 const Home = () => {
   return (
 
@@ -147,7 +144,6 @@ const Home = () => {
 
     <TopSpecialist/>
     <Testimonials/>
-    <Footer/>
 
     </div>
   )

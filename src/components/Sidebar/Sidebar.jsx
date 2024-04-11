@@ -59,8 +59,8 @@ function Sidebar() {
   const location = useLocation();
 
   const isActiveNavItem = (path) => {
-    console.log("Path: ", path);
-    console.log("Location Path: ", location.pathname);
+    // console.log("Path: ", path);
+    // console.log("Location Path: ", location.pathname);
     return location.pathname.startsWith(path);
   };
 
@@ -71,10 +71,10 @@ function Sidebar() {
       </p>
       <div className="mt-2 font-normal">
         {sidebarMenu &&
-          sidebarMenu.map((item) => (
+          sidebarMenu.map((item,i) => (
             <Link
               to={item.link}
-              key={item.name}
+              key={i}
               className={`flex items-center justify-center lg:justify-normal gap-4 py-2 cursor-pointer  transition-all ease-in-out duration-300 ${
                 isActiveNavItem(item.link)
                   ? "text-[#0001ad]"
@@ -97,7 +97,7 @@ function Sidebar() {
           sidebarGeneral.map((item, index) => (
             <Link
               to={item.link}
-              key={item.name}
+              key={index}
               className={`flex items-center justify-center lg:justify-normal gap-4 py-2 cursor-pointer  transition-all ease-in-out duration-300 ${
                 isActiveNavItem(item.link)
                   ? "text-[#0001ad]"

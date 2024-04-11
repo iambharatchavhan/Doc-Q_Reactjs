@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./navbar.css";
-import CompanyLogo from "../assets/Logo.jpg";
+import CompanyLogo from "../assets/Logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { NavLink } from "react-router-dom";
@@ -12,14 +12,14 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="navigation-container-parent">
       <div className="navMainContainer">
         <div className="logo">
           <img src={CompanyLogo} width="100px" height="40px" />
         </div>
         <div className="menuConatiner">
           <NavLink
-            to="/home"
+            to="/"
             style={({ isActive }) => ({
               color: isActive
                 ? "#5b81ae" //blue
